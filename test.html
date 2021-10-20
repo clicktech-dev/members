@@ -62,7 +62,21 @@ body {font-family: Arial, Helvetica, sans-serif;}
     <h1>Contact Us!</h1>
     <p>Contact us using the form bellow!</p>
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
-  </div>
+    <form action="https://send.pageclip.co/Ur9JDJNvuOFnmL7m93ty0Mm217N2JCS1/Contact" class="pageclip-form" method="post">
+        <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
+      
+        <!-- It looks like you are creating a contact form. These email and subject fields are special -->
+        <!-- See https://pageclip.co/docs#special-fields for more info -->
+        <input type="text" name="name" value="Billy Jean" required/>
+        <input type="email" name="email" value="billy.jean@clickdev.tech" required/>
+        <input type="text" name="subject" value="A contact subject" required/>
+      
+        <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+        <button type="submit" class="pageclip-form__submit">
+          <span>Send</span>
+        </button>
+      </form>
+</div>
 
 </div>
 
@@ -94,19 +108,6 @@ window.onclick = function(event) {
 }
 </script>
 
-<form action="https://send.pageclip.co/Ur9JDJNvuOFnmL7m93ty0Mm217N2JCS1/Contact" class="pageclip-form" method="post">
-    <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
-  
-    <!-- It looks like you are creating a contact form. These email and subject fields are special -->
-    <!-- See https://pageclip.co/docs#special-fields for more info -->
-    <input type="email" name="email" value="roscoe@example.com" />
-    <input type="text" name="subject" value="A contact subject" />
-  
-    <!-- This button will have a loading spinner. Keep the inner span for best results. -->
-    <button type="submit" class="pageclip-form__submit">
-      <span>Send</span>
-    </button>
-  </form>
-  
+
 </body>
 </html>
